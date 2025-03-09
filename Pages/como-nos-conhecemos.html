@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fiz pra Você Star</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('Public/2.jpg'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%; 
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: pink;
+            color: white;
+            padding: 5vh 0;
+            text-align: center;
+            font-size: 5vw;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 5vw;
+            margin-top: 1vh;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 5vw;
+            font-weight: bold;
+            padding: 2vh 3vw;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        main {
+            padding: 2vh;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 10vw;
+            margin: 0;
+        }
+
+        p {
+            color: white;
+            font-size: 4vw;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5vh 0;
+            font-size: 4vw;
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 5vh;
+            }
+
+            nav a {
+                font-size: 6vw;
+                padding: 3vh 5vw;
+            }
+
+            h1 {
+                font-size: 15vw;
+            }
+
+            p {
+                font-size: 5vw;
+            }
+
+            footer {
+                font-size: 5vw;
+                padding: 5vh 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>FUNCIONOU</h1>
+    <header>
+        <nav>
+            <a href="Pages/o-que-eu-quero.html">Futuro</a>
+            <a href="Pages/uno.html">Uno</a>
+        </nav>
+    </header>
+
+    <main>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Feito com ❤️ para uma Estrela</p>
+    </footer>
 </body>
 </html>
