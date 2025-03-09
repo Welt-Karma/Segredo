@@ -5,40 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiz pra Você Star</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             background-image: url('Public/3.png'); 
             background-size: cover;
             background-position: center;
-            height: 100vh; 
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            height: 100%; 
+            overflow-x: hidden;
         }
 
         header {
             background-color: pink;
             color: white;
-            padding: 40px; /* Aumentei o tamanho do cabeçalho */
+            padding: 10vh 0;
             text-align: center;
-            font-size: 32px; /* Deixei o texto do cabeçalho maior */
+            font-size: 8vw;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            gap: 40px; /* Aumentei o espaço entre os links */
-            margin-top: 20px; /* Dei um pequeno espaço entre o cabeçalho e a navegação */
+            gap: 5vw;
+            margin-top: 5vh;
         }
 
         nav a {
             text-decoration: none;
             color: white;
-            font-size: 30px; /* Aumentei o tamanho dos links */
+            font-size: 5vw;
             font-weight: bold;
-            padding: 20px 30px; /* Aumentei o padding para dar mais espaço ao redor do texto */
+            padding: 2vh 3vw;
             border-radius: 10px;
             transition: background 0.3s;
         }
@@ -48,70 +59,69 @@
         }
 
         main {
-            padding: 15px;
+            padding: 2vh;
             text-align: center;
         }
 
         h1 {
             color: white;
-            font-size: 65px;
+            font-size: 10vw;
             margin: 0;
         }
 
         p {
             color: white;
+            font-size: 4vw;
         }
 
         .Teste {
             text-align: center;
-            font-size: 45px; /* Aumentei o tamanho da fonte */
-            margin: 0 auto; /* Agora está colado no header */
-            padding: 20px;
+            font-size: 6vw; 
+            margin: 0 auto;
+            padding: 5vh 10vw;
             background-color: pink;
             border-radius: 150px;
             border: 30px;
             width: 80%;
-            font-family: 'Courier New', Courier, monospace; /* Fonte alterada */
+            font-family: 'Courier New', Courier, monospace;
         }
 
-        /* Rodapé preto */
         footer {
             background-color: black;
             color: white;
             text-align: center;
-            padding: 25px;
-            font-size: 20px;
+            padding: 5vh 0;
+            font-size: 4vw;
         }
 
-        /* Responsividade para telas menores */
         @media only screen and (max-width: 600px) {
             nav {
                 flex-direction: column;
-                gap: 20px;
+                gap: 5vh;
             }
 
             nav a {
-                font-size: 32px;
-                padding: 22px 30px;
+                font-size: 6vw;
+                padding: 3vh 5vw;
             }
 
             h1 {
-                font-size: 55px;
+                font-size: 15vw;
             }
 
             p {
-                font-size: 18px;
+                font-size: 5vw;
             }
 
             .Teste {
-                font-size: 36px;
-                padding: 15px;
-                margin: 0 auto;
+                font-size: 10vw;
+                padding: 5vh 10vw;
+                margin: 5vh auto;
             }
 
             footer {
-                font-size: 18px;
-                padding: 20px;
+                font-size: 5vw;
+                padding: 5vh 0;
             }
         }
     </style>
@@ -120,9 +130,9 @@
     <header>
         <h1>Para uma Estrela</h1>
         <nav>
-            <a href="como-nos-conhecemos.html">Como Nos Conhecemos</a>
-            <a href="o-que-eu-quero.html">O que Eu Quero</a>
-            <a href="uno.html">Uno</a>
+            <a href="Pages/como-nos-conhecemos.html">Passado</a>
+            <a href="Pages/o-que-eu-quero.html">Futuro</a>
+            <a href="Pages/uno.html">Uno</a>
         </nav>
     </header>
 
@@ -140,4 +150,4 @@
         <p>&copy; 2024 - Feito com ❤️ para uma Estrela</p>
     </footer>
 </body>
-</html>  
+</html>
