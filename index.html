@@ -15,30 +15,32 @@
             height: 100vh; 
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            overflow-y: scroll;
         }
 
         header {
             background-color: pink;
             color: white;
-            padding: 40px; /* Aumentei o tamanho do cabeçalho */
+            padding: 40px;
             text-align: center;
-            font-size: 32px; /* Deixei o texto do cabeçalho maior */
+            font-size: 32px;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            gap: 40px; /* Aumentei o espaço entre os links */
-            margin-top: 20px; /* Dei um pequeno espaço entre o cabeçalho e a navegação */
+            gap: 40px;
+            margin-top: 20px;
         }
 
         nav a {
             text-decoration: none;
             color: white;
-            font-size: 30px; /* Aumentei o tamanho dos links */
+            font-size: 30px;
             font-weight: bold;
-            padding: 20px 30px; /* Aumentei o padding para dar mais espaço ao redor do texto */
+            padding: 20px 30px;
             border-radius: 10px;
             transition: background 0.3s;
         }
@@ -64,17 +66,16 @@
 
         .Teste {
             text-align: center;
-            font-size: 45px; /* Aumentei o tamanho da fonte */
-            margin: 0 auto; /* Agora está colado no header */
+            font-size: 45px;
+            margin: 0 auto;
             padding: 20px;
             background-color: pink;
             border-radius: 150px;
             border: 30px;
             width: 80%;
-            font-family: 'Courier New', Courier, monospace; /* Fonte alterada */
+            font-family: 'Courier New', Courier, monospace;
         }
 
-        /* Rodapé preto */
         footer {
             background-color: black;
             color: white;
@@ -83,7 +84,6 @@
             font-size: 20px;
         }
 
-        /* Responsividade para telas menores */
         @media only screen and (max-width: 600px) {
             nav {
                 flex-direction: column;
@@ -120,9 +120,9 @@
     <header>
         <h1>Para uma Estrela</h1>
         <nav>
-            <a href="#">Como Nos Conhecemos</a>
-            <a href="#">O que Eu Quero</a>
-            <a href="#">Uno</a>
+            <a href="como-nos-conhecemos.html">Como Nos Conhecemos</a>
+            <a href="o-que-eu-quero.html">O que Eu Quero</a>
+            <a href="uno.html">Uno</a>
         </nav>
     </header>
 
