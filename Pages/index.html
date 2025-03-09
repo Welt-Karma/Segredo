@@ -19,7 +19,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-image: url('Public/Friend.webp'); 
+            background-image: url('Public/3.png'); 
             background-size: cover;
             background-position: center;
             display: flex;
@@ -30,11 +30,11 @@
         }
 
         header {
-            background-color: palevioletred;
+            background-color: pink;
             color: white;
             padding: 1vh 0;
             text-align: center;
-            font-size: 5vw;
+            font-size: 1vw;
         }
 
         nav {
@@ -59,14 +59,8 @@
         }
 
         main {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end; /* Ajusta os itens para o final da página */
-            align-items: center;
             padding: 2vh;
             text-align: center;
-            flex-grow: 1;
-            margin-top: auto; /* Empurra o conteúdo para a parte inferior */
         }
 
         h1 {
@@ -80,41 +74,24 @@
             font-size: 4vw;
         }
 
-        .pe {
-            color: pink;
-            font-size: 5vw;
-            background-color: palevioletred;
-            padding: 5px;  /* Diminui o padding */
-            border-radius: 50px;
+        .Teste {
             text-align: center;
-            margin-bottom: 1vh; /* Diminui o espaçamento entre os parágrafos */
+            font-size: 6vw; 
+            margin: 0 auto;
+            padding: 5vh 10vw;
+            background-color: pink;
+            border-radius: 150px;
+            border: 30px;
+            width: 80%;
+            font-family: 'Courier New', Courier, monospace;
         }
 
         footer {
             background-color: black;
             color: white;
             text-align: center;
-            padding: 5vh 0;
+            padding: 1vh 0;
             font-size: 4vw;
-        }
-
-        /* Estilos do botão "Próximo" */
-        .btn-next {
-            background-color: goldenrod;
-            color: white;
-            font-size: 3.5vw; /* Aumentado o tamanho da fonte */
-            padding: 1.5vh 3vw; /* Aumentado o padding */
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background 0.3s;
-            font-family: 'Verdana', sans-serif; /* Fonte alterada */
-            margin-bottom: 2vh;
-            width: auto; /* Ajusta a largura para o tamanho do conteúdo */
-        }
-
-        .btn-next:hover {
-            background-color: darkgoldenrod;
         }
 
         @media only screen and (max-width: 600px) {
@@ -136,35 +113,36 @@
                 font-size: 5vw;
             }
 
+            .Teste {
+                font-size: 10vw;
+                padding: 5vh 10vw;
+                margin: 5vh auto;
+            }
+
             footer {
                 font-size: 5vw;
                 padding: 5vh 0;
-            }
-
-            /* Ajustes do botão para telas pequenas */
-            .btn-next {
-                font-size: 5vw;
-                padding: 2vh 5vw;
             }
         }
     </style>
 </head>
 <body>
     <header>
+        <h1>Fiz Pra Uma Estrela</h1>
         <nav>
-            <a href="index.html">Inicio</a>
+            <a href="como-nos-conhecemos.html">Passado</a>
+            <a href="o-que-eu-quero.html">Futuro</a>
         </nav>
     </header>
 
-    <main>
-        <p class="pe">Você... foi a Única Pessoa Que.... Chorou quando eu fui embora... Eu sempre quis Sua Amizade Devolta E eu finalmente consegui <br>
-        Muitos "Amigos" Foram e Nunca voltaram e Nem vão voltar, Te Valorizo por isso, Fiz esse Site como Uma representação de Nos, Pois você é Foda <br>
-        Muitos podem dizer que Você é esquisita, Mas Foi a Esquisita que eu escolhi, e a Mesma por qual eu voltei</p>
+    <div class="Teste">
+        <p>Uma Estrela que Não sabe seu brilho</p>
+        <p>Espero Sempre Ter você Comigo</p>
+        <p>Você é Incrível</p>
+    </div>
 
-        <!-- Botão Próximo com link -->
-        <a href="pagina2.html">
-            <button class="btn-next">Próximo</button>
-        </a>
+    <main>
+        
     </main>
 
     <footer>
