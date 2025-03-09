@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiz pra Voce Star-</title>
+    <title>Fiz pra Você Star</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,15 +13,38 @@
             background-size: cover;
             background-position: center;
             height: 100vh; 
- 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         header {
             background-color: pink;
             color: white;
-            padding: 10px ;
+            padding: 30px; /* Aumentei o tamanho do cabeçalho */
             text-align: center;
-            
+            font-size: 28px; /* Deixa o texto maior */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px; /* Aumentei o tamanho das opções */
+            font-weight: bold;
+            padding: 15px 20px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
         }
 
         main {
@@ -31,44 +54,63 @@
 
         h1 {
             color: white;
-            font-size: 80px;
+            font-size: 65px;
+            margin: 0;
         }
 
         p {
             color: white;
         }
 
-        .Teste{
+        .Teste {
             text-align: center;
-            font-size: 50px;
-            margin: 10px;
-            padding:10px;
+            font-size: 40px;
+            margin: 0 auto; /* Agora está colado no header */
+            padding: 15px;
             background-color: pink;
             border-radius: 150px;
             border: 30px;
+            width: 80%;
         }
 
-        /* Responsividade para telas pequenas */
+        /* Rodapé preto */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        /* Responsividade para telas menores */
         @media only screen and (max-width: 600px) {
-            header {
-                font-size: 18px;
+            nav {
+                flex-direction: column;
+                gap: 15px;
             }
 
-            main {
-                padding: 10px;
+            nav a {
+                font-size: 28px;
+                padding: 18px;
             }
 
             h1 {
-                font-size: 20px;
+                font-size: 50px;
             }
 
             p {
-                font-size: 14px;
+                font-size: 16px;
             }
 
-            .button {
-                padding: 8px 16px;
-                font-size: 14px;
+            .Teste {
+                font-size: 32px;
+                padding: 12px;
+                margin: 0 auto;
+            }
+
+            footer {
+                font-size: 16px;
+                padding: 15px;
             }
         }
     </style>
@@ -76,15 +118,25 @@
 <body>
     <header>
         <h1>Para uma Estrela</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
     </header>
+
+    <div class="Teste">
+        <p>Uma Estrela que Não sabe seu brilho</p>
+        <p>Espero Sempre Ter você Comigo</p>
+        <p>Você é Incrível</p>
+    </div>
 
     <main>
         
     </main>
-    <div class="Teste">
-        <p>Uma Estrela que Não sabe seu brilho</p>
-        <p>Espero Sempre Ter você Comigo</p>
-        <p>Voce é Incrivel</p>
-    </div>
+
+    <footer>
+        <p>&copy; 2024 - Feito com ❤️ para uma Estrela</p>
+    </footer>
 </body>
 </html>
